@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Your Image"
+        android:textSize="35sp"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/select_img"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:src="@drawable/ic_image_search"
+        android:layout_marginTop="42sp"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="(Click to Upload)"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How to Use"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:text="1. 위쪽의 앨범 아이콘을 눌러서 찾고자 하는 장소의 사진을 불러옵니다."
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:text="2. 픽스팟 AI가 이미지를 인식하여 관광지를 알려줍니다.(조형물이나 건물이 있는 사진이면 더 좋습니다!)"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:text="3. 픽스팟 AI가 알려준 관광정보를 가지고 부산으로 출발!"
+        android:textSize="15sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/result_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="결과보기"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginLeft="70dp"
+            android:backgroundTint="@color/teal_200"
+            android:src="@drawable/ic_baseline_home_24"
+            app:borderWidth="0dp"
+            app:fabCustomSize="70dp"
+            app:tint="@color/white"
+            app:useCompatPadding="true" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
